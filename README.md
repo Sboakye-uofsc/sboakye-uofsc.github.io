@@ -1,1 +1,0 @@
-# sboakye-uofsc.github.io
