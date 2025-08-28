@@ -1,0 +1,57 @@
+/* Structure */
+
+body {
+    background: url(image01/background.jpg);
+    background-size: auto;
+}
+
+div {
+    background-color: pink;
+    width: 90%;
+    margin-block-end: auto; 
+    padding: 5%;  
+    border-radius:10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+}
+
+th, td {
+    background-color: rgb(150, 88, 209);
+    padding: 1%;
+    border-bottom: 1px solid #68f386;
+}
+
+
+img {
+    margin-left: -7%;
+}
+
+a {
+    color: rgb(248, 225, 94);
+    text-decoration: none;
+    size: 10px;
+}
+
+h1 { 
+    color: rgb(205, 107, 250);
+    text-shadow: 2px 2px 5px rgb(135, 115, 226);
+    font-size: 40px;
+    margin-left: 36%;
+    padding: 1%;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(97, 224, 154);
+    text-shadow: 3px 3px 5px rgb(7, 139, 106);
+}
+
+h3 {
+    color: rgb(227, 171, 235);
+    text-shadow: 2px 2px 5px rgb(117, 96, 207);
+    font-size: 25px;
+    margin-left: 37%;
+}
