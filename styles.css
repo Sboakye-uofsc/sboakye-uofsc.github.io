@@ -1,0 +1,55 @@
+body {
+
+}
+
+#content {
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.group2 {
+    width: 30%;
+    background: rgb(158, 252, 194);
+    border-radius: 3%;
+    padding: 5%;
+    transition: background-color 0.3s ease;
+}
+
+.group2:hover {
+    background-color: cornflowerblue;
+}
+
+#footer {
+    justify-content: space-between;
+}
+
+#main-header {
+    padding: 5px;
+    text-align: center;
+}
+
+/* T */
+#main-header h3{
+    text-align:left;
+}
+
+
+@media(min-width:768px) 
+{
+
+    #content {
+        width: 70%;
+        margin-left: 7%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+}
