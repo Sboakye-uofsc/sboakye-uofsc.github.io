@@ -15,11 +15,19 @@ body {
 
 .group2 {
     width: 60%;
-    background: rgb(164, 235, 223);
+    background: rgb(158, 252, 194);
     border-radius: 3%;
     padding: 5%;
     transition: background-color 0.3s ease;
     .group2 {width: 200px; float: right;}
+}
+
+.group2:hover {
+    background-color: cornflowerblue;
+}
+
+#footer {
+    justify-content: space-between;
 }
 
 #main-header {
@@ -27,15 +35,7 @@ body {
     text-align: center;
 }
 
-.group2:hover {
-    background-color: rgb(131, 166, 231);
-}
-
-#footer a{
-    justify-content: space-between;
-    text-decoration: none;
-}
-
+/* T */
 #main-header h3{
     text-align:left;
 }
@@ -53,4 +53,5 @@ body {
         display: flex;
         flex-direction: row;
     }
-}
+    
+    .group2 {width: 200px; float: left;}
