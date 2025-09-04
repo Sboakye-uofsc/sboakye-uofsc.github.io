@@ -1,74 +1,89 @@
 <!DOCTYPE html>
-<!--Shanya Boakye CSCE:242-->
-
 <html lang="en">
-
 	<head>
 		<title>Page Layout</title>
 		<link rel="stylesheet" href="styles.css">
 	</head>
-<!-------------------------------------->
 	<body>
-		<div id="content">
-			<header id="main-header">
-				<h1>Flex Art Gallery</h1>
-				<nav id="main-nav">
-					<ul class="columns">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Picture</a></li>
-						<li><a href="#">New</a></li>
-						<li><a href="#">Contact Us</a></li>
-					</ul>
-				</nav>
-			</header>
-			<!-------------------------------->
-			<main id="main-content" class="columns">
-				<section class="three">
-
-					<div id="art-list" class="columns">
-						<section class="art one">
-							<div class="columns">
-								<div class="one">
-									<img src="image/Bavarian-Cream-Donuts_107.jpg" width="200" height="400">
-								</div>
-								<section class="two">
-									<h3>Hello</h3>
-									<p>bjyvby vyujvy vgyujvy jvghyjvy vyi</p>
-								</section>
-							</div>
-						</section>
-						<!-------------------------!-->
-						<section class="art one">
-
-							<div class="columns">
-								<div class="one">
-									<img src="image/Bavarian-Cream-Donuts_107.jpg" width="200" height="400">
-								</div>
-								<section class="two">
-									<h3>HI</h3>
-									<p>bjyvby vyujvy vgyujvy jvghyjvy vyi</p>
-								</section>
-							</div>
-						</section>
-						<!-------------------------!-->
-						<section class="art one">
-
-							<div class="columns">
-								<div class="one">
-									<img src="image/Bavarian-Cream-Donuts_107.jpg" width="200" height="400">
-								</div>
-								<section class="two">
-									<h3>HI</h3>
-									<p>bjyvby vyujvy vgyujvy jvghyjvy vyi</p>
-								</section>
-							</div>
-						</section>
-					</div>
-				</section>
+    <div id="content">
+        <header id="main-header">
+            <h1>Layout with Flex</h1>
+            <nav id="main-nav">
+                <ul class="columns">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="main-content">
+            <section id="art-list">
+                <article class="art">
+                    <div class="art-image">
+                        <img src="https://dummyimage.com/200x400/de6fde/fff.gif">
+                    </div>
+                    <div class="art-content">
+                        <h2>Idea 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </article>
+                
+                <article class="art">
+                    <div class="art-image">
+                        <img src="https://dummyimage.com/200x400/de6fde/fff.gif">
+                    </div>
+                    <div class="art-content">
+                        <h2>Idea 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </article>
+                
+                <article class="art">
+                    <div class="art-image">
+						<img src="https://dummyimage.com/200x400/de6fde/fff.gif">
+                    </div>
+                    <div class="art-content">
+                        <h2>Idea 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+		<aside id="art-side">
+                    <h3>Secondary Nav</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                        </ul>
+                    </nav>
+                </aside>
 			</main>
-		    <!-------------------------------->
-		</div>
-	</body>
-
+			<main id="gallery" class="columns">
+				<section>
+                    <img src="https://dummyimage.com/200x100/9a5be3/fff.gif">
+                </section>
+								<section>
+                    <img src="https://dummyimage.com/200x100/9a5be3/fff.gif">
+                </section>
+				<section>
+                    <img src="https://dummyimage.com/200x100/9a5be3/fff.gif">
+                </section>
+								<section>
+                    <img src="https://dummyimage.com/200x100/9a5be3/fff.gif">
+                </section>
+			</main>
+		<footer style="background-color: rgb(121, 218, 235);">
+            <div id="footer">
+            <hr>Author: Shanya Boakye<br>
+            &copy; 2025 copyright reserved<br>
+            <a href="https://github.com/Sboakye-uofsc/sboakye-uofsc.github.io">Sboakye-uofsc.github</a>
+             </div>
+        </footer>
+    </div>
+</body>
 </html>

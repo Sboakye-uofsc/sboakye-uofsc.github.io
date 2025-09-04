@@ -1,23 +1,32 @@
-/* Structures */
 body {
-
+    font-family: Arial, sans-serif;
+    background-color: #4bddac; /* Light beige background */
 }
 
 #content {
-	width: 95%;
-	margin: auto;
-	border-radius: 5px;
-	padding: 5px;
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
 }
 
+/* Header styles */
 #main-header {
-	color: rgb(69, 163, 175);
-	border-radius: 5px;
-	padding: 5px;
-	.columns {background: rgb(182, 229, 160);}
+	background-color: #fb90ff; /* Light green background */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-/* Columns */
+h1 {
+    text-align: center;
+    color: #1e8b82;
+    margin-bottom: 15px;
+    font-size: 180%;
+}
+
+        /* Navigation styles */
+
 .columns {
 	display: flex;
 	flex-wrap: wrap;
@@ -25,23 +34,15 @@ body {
 	border-right: 5px;
 }
 
-#art-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	flex-direction: row;
-	.art one {width: 200px; float: right;}
-}
-
-/* Main Navigation */
-#main-nav ul {
+ #main-nav ul {
 	list-style-type: none; /* remove the bullets*/
 	padding-left: 0%;
+	text-align: center;
 }
 
 #main-nav li {
 
-	border-right : 5px solid rgb(207, 81, 81);
+	border-right : 5px solid rgb(149, 62, 207);
 	padding: 5px;
 }
 
@@ -52,40 +53,89 @@ body {
 	text-decoration: none; /*remove the under lines*/
 }
 
-
-
-/* Typography */
-h1 {
-	text-align: center;
+#main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-@media (in-width:768px) {
-    #content {
-        width: 70%;
-        margin-left: 7%;
-    }
-
-	#art-list {
-		display: flex;
-        flex-direction: column;
-		flex-shrink: calc(images);
-	}
-
-	/* Columns */
-	.columns {
-		display: flex;
-	}
-
-	.one {
-        flex:1;
-    }
-
-	.two {
-        flex:2;
-    }
-
-	.three {
-        flex:3;
-    }
-
+/* Main content layout */
+#main-content {
+	display: flex;
+    flex-direction: column;
 }
+
+/* Art gallery styles */
+#art-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30%;
+}
+
+.art {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	justify-content: space-around;
+	flex: 3;
+}
+
+.art img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    background-color: #9db4b4; /* Placeholder color matching your image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}
+
+#art-side {
+	border: red;
+}
+
+.art h2 {
+    color: #45a3af;
+    margin-bottom: 10px;
+    font-size: 50;
+}
+
+.art p {
+    color: #666;
+}
+
+        /* Mobile-first approach */
+        @media screen and (max-width: 767px) {
+            
+			#content {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #main-nav ul {
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            #main-nav li {
+                flex: 1;
+            }
+
+            .art {
+                flex-direction: row;
+            }
+		
+			.art {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .art img {
+                align-self: center;
+            }
+        }
