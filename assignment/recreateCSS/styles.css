@@ -1,0 +1,113 @@
+:root {
+	--primary-color:#76201f ;
+	--secondary-color: rgb(0, 0, 0);
+	--mainfont:font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+}
+
+/*Smallest main nav*/
+.small-columns, .big-columns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5%;
+	list-style-type: none;
+	a{text-decoration: none;}
+	.big-columns{gap: 2%;} /* Make sure it put with lager computer*/
+}
+
+#small-header {
+	background: var(--secondary-color);
+	padding: 0.4%;
+}
+
+#small-nav ul{
+	padding: 2%;
+}
+
+#small-nav a{
+	color: white;
+	display: block;
+	font-size: 13px;
+	display:inline;
+}
+
+/*Big main nav*/
+#big-header {
+	background: var(--secondary-color);
+	width: 100%;
+	margin-top: -3%; 
+}
+
+.big-columns {
+	li{text-align: right;}
+}
+
+#big-section {
+	background: var(--primary-color);
+	width: 100%;
+	text-align: right; /*Need to fix this*/
+	a{color: white;}
+}
+
+#showcase { /*Fix the flex*/
+    position:relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#showcase p {
+	background:rgba(255, 255, 255, 0.637);
+    color:var(--primary-color);
+    padding:8px;
+    width: 50%;
+	text-align: right;
+	font-size: 200%;
+
+
+    position:absolute;
+    bottom:15%;
+    left:3%;
+}
+
+/* Typography */
+h1 {
+	color: white; 
+	font-size: 210%;
+}
+
+/* Larger devices */
+@media only screen and (min-width: 768px) {
+
+	#content { /* Change the name */
+		margin-left: -0.6%;
+		min-width: 102%;
+		margin-top: -3%;
+	}
+
+	#small-nav ul{
+		flex-direction: row;
+	}
+	
+	#small-nav li:not(:last-child)::after { /* Fix the "|" - come back*/
+        content:"|";
+        display:inline;
+		color: white;
+    }
+
+	#big-header {
+		flex-direction: row;
+		flex: 2;
+	}
+
+	.big-columns {
+		gap: 47%;
+	}
+
+	.three {
+		flex: 3;
+	}
+
+}

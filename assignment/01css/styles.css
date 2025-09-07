@@ -38,6 +38,7 @@ h1 {
 	list-style-type: none; /* remove the bullets*/
 	padding-left: 0%;
 	text-align: center;
+	/*background: blueviolet; */
 }
 
 #main-nav li {
