@@ -6,29 +6,22 @@
 }
 
 body {
-	
+
 }
 
-/*small section*/
-#small-header, #big-header{
-	background: var(--secondary-color);
-	padding: 0.4%;
-	margin-left: -0.6%;
-	min-width: 100.4%;
-	margin-top: -4%;
-}
-
+/*Smallest main nav*/
 .small-columns, .big-columns {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1.2%;
+	gap: 1.5%;
 	list-style-type: none;
-	flex-direction: column;
-	text-align: center;
+	a{text-decoration: none;}
+	.big-columns{gap: 2%;} /* Make sure it put with lager computer*/
 }
 
-.small-columns li {
-	border-bottom: 1px solid var(--thirdary-color); /*Rembreme to put #px to see border*/
+#small-header {
+	background: var(--secondary-color);
+	padding: 0.4%;
 }
 
 #small-nav ul{
@@ -40,46 +33,30 @@ body {
 	display: block;
 	font-size: 13px;
 	display:inline;
-	text-decoration: none;
-	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/*Big section*/
+/*Big main nav*/
+#big-header {
+	background: var(--secondary-color);
+	width: 100%;
+	margin-top: -3%; 
+}
+
+.big-columns {
+	li{text-align: right;}
+}
+
 #big-section {
 	background: var(--primary-color);
 	width: 100%;
-	padding: 0.2%;
+	text-align: right; /*Need to fix this*/
+	a{color: white;}
 }
 
-#big-section a{
-	color: var(--thirdary-color);
-}
-
-#Uofsc {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 9px;
-    flex-direction: column;
-}
-
-.big-nav img {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 4px;
-	flex-direction: row;
-}
-
-.big-nav h1 {
-	color: var(--thirdary-color);
-	font-size: 135%;
-}
-
-/*showcase*/
 #showcase { /*Fix the flex*/
     position:relative;
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -0.2%;
 }
 
 #showcase p {
@@ -88,30 +65,25 @@ body {
     padding:8px;
     width: 50%;
 	text-align: right;
-	font-size: 240%;
+	font-size: 200%;
 
 
     position:absolute;
-    bottom:13%;
-    left:0%;
+    bottom:15%;
+    left:3%;
 }
 
 /*topMid */
 
-#topMid-p {
+#topMid-p p{
 	/*Make sure to fix the paddning and get white background*/
-	background: rgb(255, 255, 255);
 	display: flex;
 	flex-wrap: wrap;
-	width: 100.9%;
-	margin-left: -0.5%;
-}
+	margin-bottom: -1%;
+	font-size: 140%;
 
-#topMid-p p {
-	text-align: center;
-	font-size: 125%;
-	margin-bottom: -0.2%;
-	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	position:relative;
+	left: 24%;
 }
 
 #topMid-section p{
@@ -123,17 +95,17 @@ body {
 /*Split-section*/
 .split-section {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	margin-top: 3%;
 }
 
-.flex-item-left, .flex-item-right2{
+.flex-item-left, .flex-item-left2 {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
     background-color: var(--primary-color);
     color: var(--thirdary-color);
-	padding: 11%;
+	padding: 60%;
 	justify-content: center;
 }
 
@@ -142,13 +114,11 @@ body {
 }
 
 #broad {
-	flex: 1;
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 100%;
 	color: var(--thirdary-color);
-	padding: 2%;
-	width: 24%;
+	width: 28%;
 	
 	border: 2px solid var(--thirdary-color);
 	background: var(--secondary-color);
@@ -158,22 +128,28 @@ body {
 }
 
 .flex-item-right{
-	display: flex;
+	flex: 1;
 	flex-wrap: wrap;
     background-color: var(--primary-color);
+    color: var(--thirdary-color);
+    padding: 60px;
 
 }
 
-.flex-item-right, img, .flex-item-left2{
-	display: flex;
+.flex-item-right, img{
+	flex: 1;
 	flex-wrap: wrap;
-	flex-direction: row;
     background-color: var(--primary-color);
-	padding: 1%;
+    color: var(--thirdary-color);
+    padding: 60px;
+
+	height: 100%; 
+	width: 100%
 }
+
 
 #Mid {
-	background: rgb(255, 255, 255);
+	background: pink;
 }
 
 #bottom-Mid h2{
@@ -207,8 +183,10 @@ body {
 #cricle
 {
 	clip-path: circle(30%);
-}
 
+	height: 50%;
+	width: 100%;/*Fix this*/
+}
 
 .quotes p{
 	text-align: left;
@@ -259,29 +237,110 @@ body {
 	bottom: -10%;
 }
 
+.flex-item-left2 {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+    background-color:#1e434f;
+    color: var(--thirdary-color);
+	padding: 6%;
+	justify-content: center;
+}
+
+ .flex-item-right2 {
+	flex: 1;
+	flex-wrap: wrap;
+    background-color: #1e434f;
+    color: var(--thirdary-color);
+    padding: 30px;
+ }
+
+  .flex-item-right2, img{
+	flex: 1;
+	flex-wrap: wrap;
+    background-color: #1e434f;
+    color: var(--thirdary-color);
+    padding: 30px;
+
+	height: 100%; 
+	width: 100%;
+ }
+
+ .flex-item-left3 {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+    background-color: var(--secondary-color);
+    color: var(--thirdary-color);
+	padding: 6%;
+	justify-content: center;
+}
+
+ .flex-item-right3 {
+	flex: 1;
+	flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    color: var(--thirdary-color);
+    padding: 30px;
+ }
+
+  .flex-item-right3 img{
+	flex: 1;
+	flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    color: var(--thirdary-color);
+    padding: 30px;
+
+	width: 90%;
+	height: 90%;
+ }
+
+
+/* Typography */
+h1 {
+	color: var(--thirdary-color); 
+	font-size: 210%;
+}
+
+h2 {
+	color: var(--thirdary-color); 
+	font-size: 290%;
+}
+
+/* Larger devices */
 @media only screen and (min-width: 768px) {
 
+	#content { /* Change the name */
+		margin-left: -0.6%;
+		min-width: 102%;
+		margin-top: -3%;
+	}
+
+	#small-nav ul{
+		flex-direction: row;
+	}
+	
 	#small-nav li:not(:last-child)::after { /* Fix the "|" - come back*/
-        content:" |";
+        content:"|";
         display:inline;
 		color: white;
     }
 
-	.small-columns, .big-columns{
+	#big-header {
 		flex-direction: row;
+		flex: 2;
 	}
 
-	.small-columns li {
-		border-bottom: none; /*Rembreme to put #px to see border*/
+	.big-columns {
+		gap: 47%;
 	}
 
-	#Uofsc {
-		flex-direction: row;
-		gap: 33%;
-	}
-
-	.big-nav h1{
-		font-size: 210%;
-	}
+	.split-section {
+        flex-direction: row;
+    }
+            
+    .flex-item-left {
+        padding: 40px 30px;
+    }
 
 }
