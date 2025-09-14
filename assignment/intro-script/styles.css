@@ -1,0 +1,53 @@
+body {
+
+}
+
+#main-content {
+	flex: 3;
+	padding: 5px;
+	padding: 2%;
+}
+
+.columns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6%;
+	justify-content: center;
+	text-align: center;
+}
+
+#sunny-times {
+	border: 2px solid lightblue;
+	padding: 4%;
+}
+
+#selection {
+	border: 2px solid lightblue;
+	padding: 2%;
+}
+
+#image-change {
+	border: 2px solid lightblue;
+	padding: 2%;
+}
+
+.clicked {
+    background:magenta;
+    color:white;
+}
+
+h1 {
+	font-size: 200%;
+	text-align: center;
+}
+
+h2 {
+	font-size: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.columns {
+		flex-direction: column;
+	}
+}
