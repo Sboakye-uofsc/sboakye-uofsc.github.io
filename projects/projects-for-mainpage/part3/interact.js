@@ -8,7 +8,7 @@ new Chart("myChart", {
     datasets: [{
       fill: true,
       lineTension: 0,
-      backgroundColor: "rgba(0,0,255,1.0)",
+      backgroundColor: "rgba(231,147,289,0.77)",
       borderColor: "rgba(231, 147, 78, 0.77)",
       data: yValues
     }]
@@ -18,5 +18,23 @@ new Chart("myChart", {
     scales: {
       yAxes: [{ticks: {min: 5.0, max:50.0}}],
     }
+  }
+});
+
+
+const zValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myLines", {
+  type: "line",
+  data: {
+    labels: zValues,
+    datasets: [{
+      data: [860,1140,1060,5000,1070,1110,1900,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    },]
+  },
+  options: {
+    legend: {display: false}
   }
 });

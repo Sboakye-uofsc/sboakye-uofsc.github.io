@@ -53,14 +53,57 @@ body {
 
 }
 
+.reviews {
+	flex: 2;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20%;
+	img{padding: 7%;}
+}
+
+#game-a {
+	padding: 4%;
+}
+
+.columns {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.stat-card p {
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.trend-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+        
+        .trend-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
 /*-----Grahp and Chart-----*/
 #chart {
 	padding: 3%;
 }
 
+#chart2 {
+	margin-left: 40%;
+}
+
 .pie-chart {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background: conic-gradient(
     red 0% 30%,
@@ -120,6 +163,10 @@ body {
 }
 
 /* Typography */
+p {
+	color: var(--text-coloring); 
+	font-size: 100%;
+}
 
 h1 {
 	color: var(--text-coloring);
@@ -127,4 +174,5 @@ h1 {
 
 h2 {
 	color: var(--text-coloring);
+	font-size: 210%;
 }
