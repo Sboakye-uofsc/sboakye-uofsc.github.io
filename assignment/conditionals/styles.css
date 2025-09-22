@@ -1,0 +1,114 @@
+body {
+	height: 600px;
+  	background-color: rgb(240, 168, 255); /* For browsers that do not support gradients */
+	background-image: linear-gradient(to bottom right, rgb(150, 211, 203), rgb(240, 255, 171));
+}
+
+#content {
+	flex: 3;
+	padding: 5px;
+	padding: 2%;
+}
+
+.columns {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 6%;
+	text-align: center;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exercise1 {
+    border: 4px dotted rgb(237, 149, 248);
+	border-radius: 4%;
+    display: none; /* Initially hidden */
+}
+
+#exercise2 {
+    border: 4px dotted rgb(237, 149, 248);
+	border-radius: 4%;
+    padding: 20px;
+    display: none; /* Initially hidden */
+}
+
+#exer1 {
+	display: flex;
+	border: none;
+	background: none;
+	width: 7%;
+}
+
+#exer2 {
+	border: none;
+	background: none;
+}
+
+.triangle-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.triangle-up {
+    transform: rotate(180deg);
+}
+
+
+h1 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+	#exer1::after {
+    content: " | ";
+    display: inline;
+	background: black;
+	margin-left: 10%;
+}
+	.triangle-down {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#toggle-nav {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid black;
+	}
+
+	#main-nav {
+		display: none; /* Hidden by default */
+	}
+
+	#main-nav.show-nav {
+		display: block; /* Shown when class is added */
+	}
+	
+	#main-nav {
+		text-align: left;
+	}
+
+}
