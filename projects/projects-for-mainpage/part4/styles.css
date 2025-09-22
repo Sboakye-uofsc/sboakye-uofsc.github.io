@@ -53,16 +53,15 @@ body {
 
 }
 
-.reviews {
-	flex: 2;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20%;
-	img{padding: 7%;}
-}
-
 #game-a {
 	padding: 4%;
+}
+
+#game-r img{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-right: 30%;
 }
 
 .columns {
@@ -124,6 +123,15 @@ body {
 
 
 /*-----Navigation-----*/
+.reviews {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	gap: 3.5%;
+	padding: 6px;
+	a{font-size: 130%; color: white;}
+}
 #toggle-nav div {
     width:25px;
     height:2px;
@@ -146,7 +154,7 @@ body {
 	padding-left: 2%;
 }
 
-.columns-nav /* Fix .review*/{
+.columns-nav {
 	flex: 1;
 	display: flex;
 	flex-wrap: wrap;
