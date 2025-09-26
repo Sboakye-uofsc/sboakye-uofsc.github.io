@@ -65,6 +65,11 @@
     vertical-align: bottom; /* Aligns trees to same baseline */ 
 }
 
+footer{
+	color: rgb(250, 135, 206);
+	a{text-decoration: none; color: rgb(250, 135, 206);}
+}
+
 h1{
 	color: rgb(250, 135, 206);
 }
