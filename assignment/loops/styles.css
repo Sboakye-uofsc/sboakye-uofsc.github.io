@@ -1,0 +1,75 @@
+#main-header {
+	text-align: center;
+}
+
+#btn {
+	text-align: center;
+	padding: 3%;
+}
+
+.cloud {
+	height: 120px;
+	width: 120px;
+	border: 5px solid rgba(255, 255, 255, 0.897); 
+	background-color: rgba(255, 255, 255, 0.897);
+	border-radius: 500px;
+
+	position: relative;
+}
+
+.fuffly-circle {
+	height: 100px;
+	width: 100px;
+	border: 5px solid rgba(224, 224, 224, 0.89); 
+	background-color: rgba(224, 224, 224, 0.89);
+	border-radius: 500px;
+	
+	position: relative;
+	left: 60%;
+	bottom: -14%;
+}
+
+.circle {
+	height: 98px;
+	width: 98px;
+	border: 5px solid rgb(62, 163, 53); 
+	background-color: rgb(62, 163, 53);
+	border-radius: 500px;
+}
+
+.rectangle {
+	height: 87px;
+	width: 30px;
+	border: 5px solid rgb(151, 104, 33); 
+	background-color: rgb(151, 104, 33);
+
+	position: relative;
+	left: 26%;
+}
+
+#tree-cloud {
+	display: none;
+}
+
+#tree {
+	padding-top: 10%;
+}
+
+
+#loop {
+    text-align: center; /* Centers inline elements */
+}
+
+.cloned-art {
+    display: inline-block !important;
+    vertical-align: bottom; /* Aligns trees to same baseline */ 
+}
+
+h1{
+	color: rgb(250, 135, 206);
+}
+
+h2{
+	color: rgb(93, 211, 250)
+}
+
