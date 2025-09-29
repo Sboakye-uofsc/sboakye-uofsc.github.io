@@ -155,7 +155,7 @@ body {
 	padding-top: 2%;
 }
 
-#trends1 button {
+#trends1 button, .comment-form button {
     background: linear-gradient(135deg, #ff69b4, #1a0a4e);
     color: white;
     border: none;
@@ -166,6 +166,51 @@ body {
     transition: transform 0.3s ease;
 }
 
+/*Comment Section*/
+.comment-form {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.comment-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.comment-form {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(236, 224, 255);
+    font-size: 16px;
+}
+
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #ff69b4;
+}
 
 /*-----Navigation-----*/
 .reviews {
@@ -226,6 +271,23 @@ body {
     transform: scale(1.05);
 }
 
+.circle {
+	margin-top: 9%;
+	width: 400px; 
+	height: 400px; 
+	background-color: #1a0a4e;
+	border-radius: 50%;
+}
+
+
+div .circle{
+	position: relative;
+	background-color: #1a0a4e;
+	animation-name: myCircle;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
 /* Typography */
 p {
 	color: var(--text-coloring); 
@@ -239,6 +301,15 @@ h1 {
 h2 {
 	color: var(--text-coloring);
 	font-size: 210%;
+}
+
+@keyframes myCircle {
+	0% {background-color: #1a0a4e; left: 0px; top: 0px;}
+	25% {background-color: #5f4abd; left: 0px; top: 0px;}
+	50% {background-color: rgb(156, 226, 191); left: 0px; top: 0px;}
+	75% {background-color: #ff69b4; left: 0px; top: 0px;}
+	100% {background-color:#8b4aa5; left: 0px; top: 0px;}
+
 }
 
 @media only screen and (min-width: 768px) {
