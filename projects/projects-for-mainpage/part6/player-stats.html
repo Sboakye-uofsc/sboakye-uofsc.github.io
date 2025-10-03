@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> <!--This will be replace with API Steam-->
+	<head>
+		<title>StatBoard.com</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<div id="background1">
+			<div id="content">
+				<header>
+					<div id="main-header">
+						<div id="toggle-nav">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<img id="main-logo" src="img/mystuff.png" width="200" height="80">
+						<h1>StatBoard</h1>
+
+						<nav id="main-nav">
+							<ul class="columns-nav">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="player-stats.html">Player Stats</a></li>
+								<li><a href="game-reviews.html">Game Reviews</a></li>
+								<li><a href="trendy.html">Trendy Games </a></li>
+								<li><a href="portfolios.html">About Me</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+
+				<main>
+					<div id="trendy-content">
+						<section id="trendy-split">
+							
+							<img src="https://dummyimage.com/300x400/6f2370/1d9e1f.jpg">
+
+							<section class="trendy-description">
+								<h2>Gameplay Hours</h2>
+
+								<p>Stay updated on the latest trends in gameplay hours across the gaming industry. 
+									Get insights into tracking the popularity of various titles based on the time players are spending in-game with just a click of a button. 
+									It might help you discover your next addictive game to dive into!
+								</p>
+
+								<input type="text" placeholder="Seach Up Game..">
+							</section>
+						</section>
+						<section>
+							<div id="two-line"> <!--Fix this-->
+								<canvas id="myLines" style="width:300%;max-width:1200px"></canvas>
+							</div>
+						</section>
+					</div>
+				</main>
+
+				<footer style="background-color: rgb(57, 56, 133)">
+					<div id="footer">
+						<hr>Author: Shanya Boakye<br>
+						&copy; 2025 copyright reserved<br>
+						<a href="https://github.com/Sboakye-uofsc/sboakye-uofsc.github.io">Sboakye-uofsc.github</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script src="myscript/interact.js"></script>
+		<script src="myscript/toggle-nav.js"></script>
+	</body>
+</html>
