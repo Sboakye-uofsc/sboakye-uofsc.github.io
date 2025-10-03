@@ -14,3 +14,17 @@ new Chart("myLines", {
     legend: {display: false}
   }
 });
+
+document.querySelectorAll('.reviews-img').forEach(img => {
+    img.addEventListener('click', function() {  // Change 'event =>' to 'function()'
+        // Find the 5-star image in the same section
+        const starImg = this.parentElement.querySelector('#stars');  // Remove 'document.' and fix selector
+        
+        if (starImg.style.display === 'none') {
+            starImg.style.display = 'block';
+        } else {
+            starImg.style.display = 'none';
+        }
+    });
+});
+
