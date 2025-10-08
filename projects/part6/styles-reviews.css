@@ -1,0 +1,14 @@
+:root {
+	--primary: #181736;
+	--secondary: #252549;
+	--text-color:#fff;
+}
+
+.app {
+
+}
+
+.rating {
+	display: flex;
+	a
+}
