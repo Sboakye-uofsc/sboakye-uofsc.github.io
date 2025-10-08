@@ -25,8 +25,8 @@ class ReviewGame {
 
 		const img = document.createElement("img");
 		img_section.append(img);
-		img.src = `${this.img}`;
-	
+		img.src =`https://sboakye-uofsc.github.io/projects/part6${this.img.substring(1)}`;
+
 
 		const h2 = document.createElement("h2");
 		if(this.rating === 4.5){
