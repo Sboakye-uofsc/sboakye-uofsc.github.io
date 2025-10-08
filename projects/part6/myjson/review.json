@@ -13,7 +13,7 @@
 		"_id": 1,
 		"name_game": "Castle Crashers",
 		"released": "2012-26-09",
-		"img": "./myjoson/img/header.jpg",
+		"img": "header.jpg",
 		"username": "YOYLL347",
 		"date_respond": "2024-19-05",
 		"description": "This bring me back to the good old days",
