@@ -23,16 +23,31 @@ class ReviewGame {
 		section.classList.add("spilt-rating");
 		div.append(section);
 
-		const img = document.createElement("img");
+		const img = document.createElement("img"); /*Change to castle*/
+		img.classList.add("img-rate");
+		if(this.name_game === "Castle Crashers") {
+			img.src =`https://sboakye-uofsc.github.io/projects/part6${this.img.substring(1)}`;
+		}
 		img_section.append(img);
-		img.src =`https://sboakye-uofsc.github.io/projects/part6${this.img.substring(1)}`;
-
 
 		const h2 = document.createElement("h2");
-		if(this.rating === 4.5){
-			h2.innerHTML = this.rating;
+		h2.classList.add("title-c")
+		if(this.name_game === "Castle Crashers"){
+			h2.innerHTML = this.name_game;
 		}
 		section.append(h2);
+
+		const h3 = document.createElement("h3");
+		if(this.rating === 4.5){
+			h3.innerHTML = this.rating;
+		}
+		section.append(h3);
+
+		const h4 = document.createElement("h4");
+		if(this.released === "2012-26-09"){
+			h4.innerHTML = this.released;
+		}
+		section.append(h4);
 
 		return div;
 	}
@@ -57,6 +72,7 @@ const showReview = async () => {
 		reviewGame.append(getReviewComment(review)); 
 		const reviewInstance = new ReviewGame(review);
 		const card = reviewInstance.createReviewCard();
+
 		reviewGame.append(card);
 	});
 	

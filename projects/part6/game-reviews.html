@@ -3,7 +3,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> <!--This will be replace with API Steam-->
 	<head>
 		<title>StatBoard.com</title>
-		<link rel="stylesheet" href="styles-reviews.css">
+		<link rel="stylesheet" href="styles.css">
 	</head>
 
 	<body>
@@ -32,18 +32,9 @@
 
 				<main>
 					<div id="reviews-content">
-						<h2>Video Game Reviews</h2>
-
-						 <div class="comment-section">
-						
-						<div class="comment-form">
-							<h3 style="color: white;">Leave a Review</h3>
-							<input type="text" id="userName" placeholder="Your Name">
-							<textarea id="userComment" placeholder="Share your thoughts about this game..."></textarea>
-							<button onclick="addComment()">Submit Review</button>
+						<div id="title-background">
+							<h2 id="title">Video Game Reviews</h2>
 						</div>
-
-						<h2>Review Game</h2>
 						<nav id="review-nav">
 							<ul class="reviews">
 								<li><a>All</a></li>
@@ -53,6 +44,18 @@
 								<li><a>Shooter</a></li>
 							</ul>
 						</nav>
+						<section>
+							<h2>Clickable Review - Placeholder</h2>
+							<div id="game-row-background">
+								<a href="index-reviews.html"><img id="game-row" src="img/peak.png" width="180" height="200"></a>
+							</div>
+
+							<a href="#" id="arrow-prev">&lt;</a>
+							<a href="#" id="arrow-next">&gt;</a>
+						</section>
+						<section>
+							
+						</section>
 					</div>
 				</main>
 
@@ -83,6 +86,7 @@
 				</footer>
 			</div>
 		</div>
-		<script src="reviews.js"></script>
+		<script src="myscript/interact.js"></script>
+		<script src="myscript/toggle-nav.js"></script>
 	</body>
 </html>

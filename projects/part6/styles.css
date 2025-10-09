@@ -166,6 +166,53 @@ body {
     transition: transform 0.3s ease;
 }
 
+/*Review*/
+#reviews-content {
+	#review-nav{padding-top: 4%;}
+}
+#game-row-background {
+	position: relative;
+	background: #1a1027;
+	border-radius: 3%;
+	padding: 3%;
+	#game-row{padding-left: 2%;}
+}
+
+#title-background{
+	position: relative;
+	background: rgba(93, 190, 255, 0.274);
+	animation-name: myCircle;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+	padding: 9%;
+}
+
+#title{
+	font-size: 49px;
+	position: absolute;
+	left: 35.1%;
+	top: 21%;
+}
+
+#arrow-prev, #arrow-next {
+    position:absolute;
+    background:#3722527e;
+    color: white;
+    text-decoration: none;
+    font-size:3em;
+	bottom: -10%;
+    
+}
+
+#arrow-prev {
+    left:2%;
+}
+
+#arrow-next {
+    right:2%;
+}
+
+
 /*Comment Section*/
 .comment-form {
     background: rgba(255, 255, 255, 0.03);
@@ -304,13 +351,15 @@ h2 {
 }
 
 @keyframes myCircle {
-	0% {background-color: #1a0a4e; left: 0px; top: 0px;}
-	25% {background-color: #5f4abd; left: 0px; top: 0px;}
-	50% {background-color: rgb(156, 226, 191); left: 0px; top: 0px;}
-	75% {background-color: #ff69b4; left: 0px; top: 0px;}
-	100% {background-color:#8b4aa5; left: 0px; top: 0px;}
+	0% {background-color: #6141883f; left: 0px; top: 0px;}
+	20% {background-color: #e100ff41; left: 0px; top: 0px;}
+	40% {background-color: #3902ff4f; left: 0px; top: 0px;}
+	60% {background-color: #4dffe12f; left: 0px; top: 0px;}
+	80% {background-color: rgba(255, 0, 157, 0.219); left: 0px; top: 0px;}
+	100% {background-color:#6141883f; left: 0px; top: 0px;}
 
 }
+
 
 @media only screen and (min-width: 768px) {
 	#toggle-nav {

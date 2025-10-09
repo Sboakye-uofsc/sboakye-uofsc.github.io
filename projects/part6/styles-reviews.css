@@ -4,11 +4,38 @@
 	--text-color:#fff;
 }
 
-.app {
-
+.container {
+	flex: 2;
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.rating {
+.img-rating{
+	width: 60%;
+	padding-left: 3%;
+}
+
+.spilt-rating {
+	flex: 3;
+}
+
+.img-rate {
+	width: 95%;
 	display: flex;
-	a
+	flex-wrap: wrap;
+}
+
+h2{
+	font-size: 250%;
+}
+
+h3 {
+	font-size: 170%;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
 }

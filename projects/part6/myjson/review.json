@@ -23,7 +23,7 @@
 	{
 		"_id": 1,
 		"name_game": "Runescape Dragonwilds",
-		"released": "2012-26-09",
+		"released": "2025-15-04",
 		"img": "./myjson/img/dragon.png",
 		"username": "Maical_Moooon",
 		"date_respond": "2025-15-04",
@@ -34,10 +34,10 @@
 	{
 		"_id": 1,
 		"name_game": "Marvel Rivals",
-		"released": "2012-26-09",
-		"img": "./myjson/img/peak.png",
-		"username": "Maical_Moooon",
-		"date_respond": "2024-05-10",
+		"released": "2024-05-12",
+		"img": "./myjson/img/rivals.png",
+		"username": "Rivals_Katch",
+		"date_respond": "2024-09-12",
 		"description": "I will definitely play with friends",
 		"rating": 5,
 		"reviews":["The game is cool. Really like the combat in this game"]
