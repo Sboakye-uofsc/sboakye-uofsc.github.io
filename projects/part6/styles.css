@@ -336,6 +336,15 @@ div .circle{
 }
 
 /* Typography */
+#footer-color {
+	background-color: #652f7e;
+}
+
+#git-color{
+	text-decoration: none;
+	color: black;
+}
+
 p {
 	color: var(--text-coloring); 
 	font-size: 100%;
