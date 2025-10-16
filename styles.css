@@ -55,6 +55,12 @@ body {
     text-align:left;
 }
 
+#server {
+	text-decoration: none;
+	border-right: 2px solid blueviolet;
+	padding-right: 1.6%;
+}
+
 h1, h2 {
 	color: rgb(198, 159, 226);
 }
