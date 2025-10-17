@@ -1,0 +1,57 @@
+:root {
+	--primary: #181736;
+	--secondary: #252549;
+	--text-color:#fff;
+}
+
+.container {
+	flex: 2;
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.img-rating{
+	width: 60%;
+	padding-left: 3%;
+}
+
+.spilt-rating {
+	flex: 3;
+}
+
+.img-rate {
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rating_progress {
+	text-align: center;
+	width: 30%;
+	background-color: rgba(255, 192, 203, 0.425);
+	border-radius: 1px;
+	h3{font-size: 190%; color: white;}
+}
+
+.divComment {
+	background: rgba(221, 101, 236, 0.459);
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h2{
+	padding-top: -0.5%;
+	font-size: 250%;
+}
+
+h4 {
+	font-size: 120%;
+	color: white;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+}
